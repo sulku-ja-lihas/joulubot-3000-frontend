@@ -11,7 +11,7 @@ export const startRaffle = async () => {
 
 export const finishRaffle = async () => {
   const response = await fetch(
-    "https://peaceful-retreat-28124.herokuapp.com/startraffle",
+    "https://peaceful-retreat-28124.herokuapp.com/finishraffle",
     {
       method: "GET"
     }
