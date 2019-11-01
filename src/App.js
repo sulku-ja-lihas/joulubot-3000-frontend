@@ -9,9 +9,6 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route path="/jotain">
-              <div>Jotain</div>
-            </Route>
             <Route path="/">
               <Home />
             </Route>

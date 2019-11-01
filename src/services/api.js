@@ -1,8 +1,21 @@
-export const sendEvent = async ({ date, story, task }) => {
-  const response = await fetch("", {
-    method: "POST",
-    mode: "cors",
-    body: JSON.stringify({ date, story, task })
-  });
+export const startRaffle = async () => {
+  const response = await fetch(
+    "https://peaceful-retreat-28124.herokuapp.com/startraffle",
+    {
+      method: "GET"
+    }
+  );
+
+  return await response.json();
+};
+
+export const finishRaffle = async () => {
+  const response = await fetch(
+    "https://peaceful-retreat-28124.herokuapp.com/startraffle",
+    {
+      method: "GET"
+    }
+  );
+
   return await response.json();
 };
